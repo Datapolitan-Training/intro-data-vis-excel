@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction to Data Visualization in Excel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="slide.css"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+layout:true
+
+<div class="header" style="display:block; text-align: left; color:gray; font-size:1em; position: fixed; top: 0px; left: 0px; height: 30px;vertical-align:middle;margin:7px 0 0 0;width:100%;background: #fcfcfc;
+background: -moz-linear-gradient(top, #fcfcfc 0%, #d1d1d1 100%); 
+background: -webkit-linear-gradient(top, #fcfcfc 0%,#d1d1d1 100%);
+background: linear-gradient(to bottom, #fcfcfc 0%,#d1d1d1 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d1d1d1',GradientType=0 );">
+  <img src="images/datapolitan_transparent_small.png" style="position: fixed;top: 2px; left: 5px; width: 14%;">
+  <p style="display:block;text-align:left;color:gray;font-size:1em; position: fixed; top: 0px; left: 155px; height: 30px;vertical-align:middle;margin:7px 0 0 0; ">Introduction to Data Visualization in Excel</p>
+</div>
+<div class="footer" style="display:block;color:gray;position:fixed;bottom: 0px;left:0px;height:30px;vertical-align:middle;margin:0 0 0 0;width:100%;background: #fcfcfc;background: -moz-linear-gradient(top, #fcfcfc 0%, #d1d1d1 100%);background: -webkit-linear-gradient(top, #fcfcfc 0%,#d1d1d1 100%);background: linear-gradient(to bottom, #fcfcfc 0%,#d1d1d1 100%);sfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d1d1d1',GradientType=0 );">
+  <p class="footer">
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Data Visualization in Excel</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" target="_blank" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> and Elizabeth DiLuzio is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+  </p>
+</div>
+
+
+--
+
+class:center, middle
+![img-center-50](images/datapolitan.png)
+
+# Introduction to Data Visualization in Excel
+
+- - -
+
+## Instructors: Elizabeth DiLuzio and Richard Dunks
+## Teaching Assistant: 
+### Follow along at: 
+#### See the code at: 
+
+---
+
+class:center,middle
+
+<!-- start of A block -->
+# Welcome
+???
++ Facilitators and TA introduce themselves, establishing mastery but also creating openings for vulnerability and awareness
+
+---
+
+# A Few Ground Rules
+???
++ Facilitators establish the intention we have for the culture of the classroom
+
+--
+
++ Step up, step back
+--
+
++ One mic
+--
+
++ Be curious and ask questions
+--
+
++ Assume noble regard and positive intent
+--
+
++ Respect multiple perspectives 
+--
+
++ Listen to comprehend, not to respond
+--
+
++ Be present (phone, email, social media, etc.)
+
+---
+
+# Introduce Yourself to Your Neighbor
+
++ Who are you?
++ Where do you work?
++ What has been the proudest moment in your job?
++ If you were an Excel function, which one would you be?
+
+???
++ An opportunity for participants to get to know each other and settle into the class
++ We bring them into a positive space related to their work
++ Facilitator reminds them the data isn't the end but the means to achieve the actions that make us feel good about our jobs
+
+---
+
+# What to Expect Today
+
+???
++ An opportunity to set expectations about the topics covered today
+
+--
++ 
+
+
+---
+
+# Housekeeping
+???
++ Facilitator sets expectations with the students
++ Establishes the "contract" for the class
+
+--
+
++ Feel free to use the bathroom if you need during class
+--
+
++ Please take any phone conversations into the hall to not disrupt the class
+
+---
+
+# Data Visualization
+
+
+> When communicating results to non-technical types there is nothing better than a clear visualization to make a point.
+
+##-John Tukey
+
+
+???
++ Start by asking the class "What is data viz?" "Why do we do it?" Then read next two quotes as support of what class said.
+
+---
+
+# Data Visualization
+
+> There are two goals when presenting data: convey your story and establish credibility.
+
+## -Edward Tufte
+
+---
+
+# Napoleon's March
+
+
+![img-center-100](images/tufte.png)
+.caption[Image Credit: [https://www.edwardtufte.com](https://www.edwardtufte.com), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++ What is this visualization showing? 
++ What's your critique?
+
+---
+
+class:middle
+> Never underestimate your audience. It’s the most common mistake made by presenters. It is not about you anymore. It’s about your audience’s relationship with your content.
+
+## -Edward Tufte
+
+---
+
+# Key Elements to Consider When Designing a Visual
+
+--
++ Type of chart
+--
+
++ Amount of data
+--
+
++ Title
+--
+
++ Use of color
+--
+
++ Data-Ink Ratio
+
+---
+
+# Choosing Your Chart
+--
+
+
+![img-center-85](images/chartsuggestions.png)
+.caption[Image Credit: [Extreme Presentations](http://extremepresentation.com/wp-content/uploads/6a00d8341bfd2e53ef0148c699cc96970c.jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+---
+
+class:center,middle
+# Let's take a look at some of the more popular types
+
+---
+
+# Type of Chart by Data Type
+
+???
++ In this series of photos, talk the students through the way we chart categorical vs numerical data
++ Point out why bar and pie charts are the most commonly seen (you can use them with any type of data)
+
+--
+
+![img-center-100](images/datatypechart1.png)
+
+
+---
+
+# Type of Chart by Data Type
+
+
+![img-center-100](images/datatypechart2.png)
+
+---
+
+# Type of Chart by Data Type
+
+
+![img-center-100](images/datatypechart3.png)
+
+---
+
+# Type of Chart by Data Type
+
+
+![img-center-100](images/datatypechart4.png)
+
+## Bar and pie charts can be used to visualize both categorical and numerical data
+
+---
+
+# Type of Chart by Data Type
+
+
+![img-center-100](images/datatypechart5.png)
+
+## Line charts and dot plots are best for numerical data
+
+---
+
+# Type of Chart by Data Type
+
+
+![img-center-100](images/datatypechart6.png)
+
+## Tree maps are best for categorical data
+
+---
+
+class:center,middle
+# Let's see them in action
+
+---
+
+
+# Type of Chart - One Data Point
+
+
+![img-center-90](images/drinkingage.png)
+.caption[Image Credit: [https://www.cbc.ca](https://www.cbc.ca/news/canada/saskatchewan/drinking-age-will-remain-19-in-saskatchewan-1.1350523), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++ Thoughts on chart?
++ Better way to show drinking ages across Canada? (map with 2 colors for 2 ages represented)
++ Better way to show main point of article?
+
+---
+
+# Type of Chart - One Data Point
+
+
+![img-center-50](images/bignumber.png)
+
+???
++ This is an alternative to the chart on the previous slide
+
+---
+
+# Type of Chart - One Data Point
+
+
+![img-center-100](images/unitchart.png)
+
+???
++ There are other ways to represent one number
+
+---
+
+# Type of Chart - One Data Point
+
+
+![img-center-100](images/donutnumber.png)
+
+???
++ There are other ways to represent one number
+
+---
+
+# Type of Chart - Two or More Data Points
+
+
+![img-center-100](images/mentalhealthbeds.png)
+.caption[Image Credit: [https://www.samhsa.gov](https://www.samhsa.gov/data/sites/default/files/2016_National_Mental_Health_Services_Survey.pdf), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++ Thoughts on chart? Constructive criticism?
+
+---
+
+# Type of Chart - Two or More Data Points
+
+
+![img-center-85](images/sidebysidebeds.png)
+
+---
+
+# Type of Chart - Two or More Data Points
+
+
+![img-center-100](images/piebeds.png)
+
+---
+
+class:middle
+> There is no data that can be displayed in a pie chart, that cannot be displayed better in some other type of chart.
+
+## -John Tukey
+
+---
+
+# Type of Chart - Two or More Data Points
+
+
+![img-center-60](images/stackedbeds.png)
+
+---
+
+# Type of Chart - Change Over Time
+
+
+![img-center-80](images/linegraph.png)
+
+???
++ Constructive feedback?
+
+---
+
+# Amount of Data
+
+--
++ Remove data that doesn't support the story
+--
+
+![img-center-90](images/slopechart.png)
+
+---
+
+# Amount of Data
+
+
+![img-center-70](images/indiaeats.png)
+.caption[Image Credit: [Huffington Post India](https://www.huffingtonpost.in/2016/06/14/how-india-eats_n_10434374.html), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++ Thoughts on chart? Constructive criticism?
+
+---
+
+#  Amount of Data
+
+![img-center-60](images/baseball.png)
+.caption[Image Credit: [Sports Center](https://www.facebook.com/SportsCenter/photos/a.166942843324566/2173658729319624/?type=3&theater), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++ Thoughts on chart? Constructive criticism?
+
+---
+
+# Title and Annotations
+
+## Use the title and annotations to direct the reader's analysis
+--
+
++ Ask a question that the data answers
+--
+
++ Tell the reader the conclusion of the visualization
+--
+
++ Point out the trend or pattern you'd like the audience to notice
+--
+
++ Don't get too wordy
+
+---
+
+# Title and Annotations
+
+![img-center-70](images/bedstitle.png)
+
+???
++ Bringing back an old chart.
+
+---
+
+# Title and Annotations
+
+
+![img-center-80](images/foodorigin.png)
+.caption[Image Credit: [Bloomberg Markets](https://www.bloomberg.com/markets), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++ Thoughts on chart? Constructive criticism?
+
+---
+
+
+# Title and Annotations
+
+![img-center-90](images/obamatitle.png)
+.caption[Image Credit: [US DOE](https://twitter.com/obamawhitehouse/status/677242822920151045), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+???
++ Thoughts on chart? Constructive criticism?
+
+---
+
+# Use of Color
+
+--
+
+## Use color intentionally to make comprehension and interpretation easier. 
+---
+
+# Use of Color
+
+
+## **For Sequential Numbers**
+--
+
++ Use color scales with the darkest color representing the highest number and the lightest color representing the lowest number
+--
+
++ Consider using two hues running light to dark for even more clarity
+
+---
+
+# Use of Color
+
+
+## **For Categorical Data**
+--
+
++ Each category gets its own color
+---
+
+# Use of Color
+
+
+## **For Any Type of Data**
+--
+
++ Consider grey to be the most important color. Use it to show the less important data while accentuating value(s) of interest in a color.
+
+
+---
+
+# Use of Color
+
+
+![img-center-70](images/spaghetti.png)
+.caption[Image Credit: [Bloomberg](https://www.bloomberg.com/news/features/2018-07-26/she-launches-spaceships-sells-rockets-and-deals-with-elon-musk), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+---
+
+# Use of Color
+
+
+![img-center-80](images/obamadivided.png)
+.caption[Image Credit: [Wall Street Journal](https://www.wsj.com/articles/SB10001424127887324439804578103470239517336), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)]
+
+---
+
+# Use of Color
+
+
+![img-center-65](images/mhbedscolor.png)
+
+???
++ Bringing back an old chart.
+
+---
+
+# Tips for Using Color
+--
+
++ Be sure there's a sufficient difference between your colors
+--
+
++ Color scales are worth exploring
+--
+
++ Watch out for the connotation of certain colors (ex: red)
+--
+
++ Avoid patterns
+--
+
++ Don't use more than 6 colors
+--
+
++ Resource for color scales: [Color Brewer](http://colorbrewer2.org)
+
+---
+
+class:middle
+>Clutter and confusion are failures of design, not attributes of information.
+
+## -Edward Tufte
+
+???
++ Class's thoughts on this? What does it mean? Do you agree?
+
+---
+
+# Data-Ink Ratio
+--
+
++ Ink used to describe the data / ink used to describe everything else
+--
+
++ Want the ratio to be high (two numbers as close as possible to each other)
+--
+
++ Tufte calls the "everything else" chartjunk
+
+---
+
+# Common Types of Chartjunk
+--
+
++ Dark gridlines
+--
+
++ Overuse of bright, bold colors
+--
+
++ Unnecessary use of all uppercase
+--
+
++ Unnecessary legends
+--
+
++ Background color
+
+---
+
+# Data-Ink Ratio
+
+
+![img-center-90](images/baconbefore.png)
+
+???
++ Thoughts on how to declutter
+
+---
+
+# Data-Ink Ratio
+
+
+![img-center-100](images/baconafter.png)
+
+---
+
+class:center,middle
+# How do you learn to create good visualizations?
+# &nbsp;
+
+
+---
+
+class:center,middle
+# How do you learn to create good visualizations?
+# ...Make a lot of bad visualizations 
+
+---
+
+# Your Turn
+--
+
++ Graphically represent the analyses you have done so far
+--
+
++ Incorporate data viz concepts we have discussed
+
+???
++ Give students approx 20 minutes
+
+---
+
+# .center[15 Minute Break]
+--
+
++ Leave up on your monitor one chart you'd like feedback on
+--
+
++ During break, visit 3 computers
+--
+
++ Leave feedback for each chart on a Post-It stuck to the monitor
+--
+
++ Remember to honor the assumption of noble regard and positive intent (i.e. don't be a jerk)
+
+
+---
+
+# Your Turn
+--
+
++ Incorporate the feedback you received on your chart
+--
+
++ Create a quick presentation of your data story to share with the class
+--
+
++ We'll be here to help
+--
+
++ Make sure you've updated your documentation
+--
+
++ [Click to submit your work](https://script.google.com/a/macros/datapolitan.com/s/AKfycbwMcE5pcJwZHdbSCN_2epwaXnRLSRPaLbHCAhxaZJ79UXaRpQ_l/exec)
+
+???
++ Give class approx 40 minutes to create their presentations and submit their work
+
+---
+
+class:center,middle
+# Presentations
+
+---
+
+class:center,middle
+# WRAP-UP
+
+---
+
+# What We've Covered Today
++ 
+
+---
+
+class:center,middle
+# What's to Come
+
+???
++ Let participants know about full day class to come
+
+---
+
+# Resources
+
+--
+
++ [Microsoft Excel keyboard shortcuts](https://support.office.com/en-us/article/keyboard-shortcuts-in-excel-for-windows-1798d9d5-842a-42b8-9c99-9b7213f0040f)
+--
+
++ [7 essential Excel tricks every office worker needs to know](https://www.microsofttraining.net/sharing/11-seven-essential-excel-tricks-every-office-worker-needs-to-know.html) (we covered 6 of the 7 today)
+--
+
++ [11 Places That Can Turn You Into A Microsoft Excel Power User](https://medium.com/the-mission/eleven-places-that-can-turn-you-into-a-microsoft-excel-power-user-c119f18e138c)
+<!-- + [Data Sensemaking](http://fellinlovewithdata.com/teaching/developing-a-data-sensemaking-course) by Enrico Bertini -->
+--
+
++ [Copy of today's handout](workbook.pdf)
+--
+
++ [Datapolitan Training Classes](http://training.datapolitan.com)
+
+---
+name:contact
+
+# .center[Contact Information]
+
+## Elizabeth DiLuzio
++ Email: Elizabeth[at]datapolitan[dot]com
++ Twitter: [@lizdiluzio](https://twitter.com/lizdiluzio)
+
+
+## Richard Dunks
++ Email: richard[at]datapolitan[dot]com
++ Website: http://www.datapolitan.com
++ Twitter: [@datapolitan](https://twitter.com/datapolitan)
+
+<!-- ### Elana Shneyer
+<ul>
+    <li style="font-size:35px">
+        Email: elana[at]datapolitan[dot]com
+    </li>
+</ul>
+ -->
+<!-- ### Julia Marden
+<ul>
+    <li style="font-size:35px">
+        Email: julia[at]tinypanther[dot]com
+    </li>
+    <li style="font-size:35px">
+        Website: <a href="http://tinypanther.com">http://tinypanther.com</a>
+    </li>
+    <li style="font-size:35px">
+        Twitter: <a href="https://twitter.com/juliaem">@juliaem</a>
+    </li>
+</ul> -->
+
+
+---
+
+class:center, middle
+# THANK YOU!
+
+---
+
+exclude:true
+
+# Create the Table
+--
+
+exclude:true
+![img-center-90](images/emptytable.png)
+
+???
++ Make new tab and create table in it
+
+---
+
+exclude:true
+
+# Number of Inspections
+--
+
+exclude:true
++ We will use the COUNTIF function
+--
+
+exclude:true
++ Useful when you want to count the number of cells that fit a certain criteria
+
+---
+
+exclude:true
+
+# Number of Inspections
+
+### Syntax
+### =COUNTIF(<span style="color:red">range</span>,<span style="color:orange">criteria</span>)
+--
+exclude:true
+
+### What it Says
+### =COUNTIF (<span style="color:red">"search here"</span>, <span style="color:orange">"count every time you find this value"</span> )
+--
+exclude:true
+![img-center-50](images/countiffunction.png)
+
+---
+
+exclude:true
+
+# COUNTIF
+--
+exclude:true
+![img-center-90](images/countiffunctionaction.png)
+
+---
+
+exclude:true
+
+# Number of Hours Worked
+--
+exclude:true
++ We will use the SUMIF function
+--
+exclude:true
++ Useful when you want to add together the values in cells aligned with cells that fit a certain criteria
+--
+exclude:true
++ It can only be used on numbers
+
+---
+
+exclude:true
+
+# Number of Hours Worked
+
+### Syntax
+### =SUMIF(<span style="color:red">range</span>,<span style="color:orange">criteria</span>,<span style="color:green">[sum_range]</span>)
+--
+exclude:true
+### What it Says
+### =SUMIF (<span style="color:red">"look here"</span>, <span style="color:orange">"for this value"</span>, <span style="color:green">"when you find it, add the corresponding value from here"</span> )
+--
+exclude:true
+![img-center-40](images/sumiffunction.png)
+
+---
+
+exclude:true
+
+# SUMIF
+--
+exclude:true
+![img-center-100](images/sumiffunctionaction.png)
+
+---
+
+exclude:true
+
+# Check Your Work
+--
+exclude:true
+## Always a good idea to double check when using formulas
+--
+exclude:true
+## You can check...
+--
+exclude:true
++ With a different set of formulas
+--
+exclude:true
++ With a PivotTable
+--
+exclude:true
+![img-center-40](images/pivotcheck.png)
+---
+
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create(
+        // {
+        //   slideNumberFormat: ""}
+        );
+    </script>
+  </body>
+</html>
